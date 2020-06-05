@@ -1,0 +1,798 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Noto+Serif+JP&display=swap");
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 0 auto;
+  color: #444444;
+  font-size: 1.4rem;
+  font-family: "Noto Sans JP", "sans-serif", "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", Meiryo, メイリオ, Osaka, "MS PGothic", arial, helvetica, sans-serif;
+  background-color: #ffffff;
+  display: grid;
+  grid-template: "header" 55px "main  " "......" 10px "footer" 140px; }
+
+header {
+  grid-area: header; }
+
+main {
+  grid-area: main; }
+
+footer {
+  grid-area: footer; }
+
+a {
+  color: #444444;
+  text-decoration: none; }
+  a:visited {
+    color: #2b2b2b; }
+  a:hover {
+    color: #2b2b2b; }
+  a:active {
+    color: #515151; }
+
+/*------------------sp版-----------------------
+---------------------------------------------*/
+body {
+  width: 100%; }
+  body header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 0.8rem 2.0rem;
+    z-index: 9999; }
+    body header .header-in {
+      display: flex;
+      align-items: center; }
+      body header .header-in .header-logo {
+        width: 80%; }
+        body header .header-in .header-logo a {
+          display: block; }
+          body header .header-in .header-logo a img {
+            width: 100%; }
+      body header .header-in .menu-btn {
+        width: 20%;
+        text-align: right; }
+      body header .header-in .sp-menubtn_toggle {
+        width: 100%;
+        position: absolute;
+        top: 46px;
+        left: 0;
+        display: none;
+        background-color: #ffffff;
+        padding-left: 0;
+        border-top: 1px solid #fddb88; }
+        body header .header-in .sp-menubtn_toggle li {
+          list-style: none;
+          border-bottom: 1px solid #fddb88;
+          text-align: center; }
+          body header .header-in .sp-menubtn_toggle li a {
+            display: block;
+            padding: 15px 0;
+            font-size: 1.5rem;
+            line-height: 1.0; }
+          body header .header-in .sp-menubtn_toggle li a:hover {
+            opacity: 0.8; }
+  body main .first-font {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: normal;
+    margin: 1.0rem 0 3.0rem 0;
+    font-family: "Noto Serif JP", serif; }
+  body main .first-font::before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-image: url(../images/top/t-mame-pc.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0 auto 0.8rem; }
+  body main #screen {
+    height: 300px;
+    background-image: url(../images/top/top_s.png);
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body main #screen .vertical {
+      writing-mode: vertical-rl;
+      font-size: 2.0rem;
+      line-height: 1.7;
+      font-weight: bold;
+      color: #ffffff;
+      padding: 5.5rem 0 0 1.5rem;
+      font-family: "Noto Serif JP", serif;
+      color: #773300; }
+  body main #news {
+    padding: 0 1.5rem;
+    margin-top: 2.0rem;
+    margin-bottom: 5.0rem; }
+    body main #news .news-li {
+      line-height: 2.6rem; }
+      body main #news .news-li dt {
+        float: none; }
+      body main #news .news-li dd {
+        margin-bottom: 2.0rem;
+        margin-left: 0; }
+        body main #news .news-li dd h4 {
+          font-size: 1.4rem;
+          color: #773300; }
+        body main #news .news-li dd p.news-text {
+          font-size: 1.4rem; }
+  body main #commitment {
+    margin-bottom: 10.0rem;
+    padding: 0 1.5rem; }
+    body main #commitment img {
+      width: 40%;
+      margin: 0 auto;
+      display: block;
+      border-radius: 50%;
+      height: auto; }
+    body main #commitment .commitment-text h2 {
+      font-size: 2.0rem;
+      color: #773300;
+      line-height: 3;
+      text-align: center;
+      font-weight: normal; }
+    body main #commitment .commitment-text p.exp {
+      line-height: 2.5;
+      font-size: 1.4rem;
+      margin-bottom: 2.0rem; }
+    body main #commitment .commitment-text img {
+      width: 100%;
+      border-radius: 0;
+      height: 100%; }
+    body main #commitment .commitment-li .commitment-li-wrp {
+      display: flex;
+      margin-top: 2.0rem; }
+      body main #commitment .commitment-li .commitment-li-wrp .li-txt {
+        width: 60%; }
+        body main #commitment .commitment-li .commitment-li-wrp .li-txt h5 {
+          font-size: 1.4rem;
+          margin: 2.0rem 0 1.0rem 0;
+          color: #773300; }
+        body main #commitment .commitment-li .commitment-li-wrp .li-txt h5::before {
+          content: url(../images/top/cho2.png);
+          margin-right: 1.0rem; }
+        body main #commitment .commitment-li .commitment-li-wrp .li-txt ul {
+          line-height: 1.5;
+          font-size: 1.3rem;
+          padding-left: 1.7rem;
+          position: relative; }
+          body main #commitment .commitment-li .commitment-li-wrp .li-txt ul li {
+            margin-bottom: 1.0rem;
+            line-height: 1.7; }
+      body main #commitment .commitment-li .commitment-li-wrp .li-img {
+        width: 40%;
+        margin-top: 6.0rem; }
+        body main #commitment .commitment-li .commitment-li-wrp .li-img img {
+          display: block;
+          width: 90%;
+          height: auto;
+          border-radius: 0;
+          margin: 0;
+          margin-left: auto; }
+    body main #commitment .apr p.apr-left {
+      line-height: 1.7;
+      margin: 3.0rem 0 2.0rem 0;
+      font-size: 1.6rem;
+      color: #773300; }
+      body main #commitment .apr p.apr-left a {
+        display: block;
+        color: #ffbc17;
+        text-align: right;
+        font-size: 1.2rem;
+        margin-right: 1.0rem; }
+    body main #commitment .apr .sq::after {
+      content: "▼";
+      color: #ffbc17;
+      margin-left: 1.0rem; }
+    body main #commitment .apr .apr-right a {
+      display: block; }
+      body main #commitment .apr .apr-right a img {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+        border-radius: 0;
+        height: auto; }
+  body main #product {
+    padding: 0 3%;
+    margin-bottom: 5.0rem; }
+    body main #product .product-li .product-items {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap; }
+      body main #product .product-li .product-items li {
+        width: 50%;
+        margin-bottom: 2.0rem; }
+        body main #product .product-li .product-items li h3 {
+          margin-left: 1.0rem; }
+          body main #product .product-li .product-items li h3 span {
+            color: #ffbc17;
+            margin-right: 0.3rem;
+            font-size: 17px; }
+        body main #product .product-li .product-items li p {
+          margin: 1.0rem;
+          font-size: 1.3rem;
+          line-height: 1.6; }
+        body main #product .product-li .product-items li img {
+          width: 100%; }
+  body main #contest {
+    margin-bottom: 7.0rem; }
+    body main #contest h2 {
+      font-size: 3.0rem;
+      color: #773300;
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-family: "Noto Serif JP", serif; }
+    body main #contest p.contest-txt {
+      padding: 0 1.5rem;
+      line-height: 1.7;
+      text-align: center;
+      margin-bottom: 2.0rem; }
+      body main #contest p.contest-txt span {
+        font-size: 1.6rem;
+        font-weight: bold;
+        color: #ffbc17; }
+    body main #contest .contest-wrp {
+      background-color: transparent;
+      background-image: radial-gradient(#ffbc17 3px, rgba(0, 0, 0, 0) 3px);
+      background-size: 40px 10px;
+      padding: 5.0rem 0 2.0rem; }
+      body main #contest .contest-wrp h2 {
+        text-align: center;
+        font-size: 3.5rem;
+        margin-bottom: 2.0rem; }
+      body main #contest .contest-wrp .contest-li {
+        margin-bottom: 2.0rem;
+        display: flex;
+        justify-content: space-between; }
+        body main #contest .contest-wrp .contest-li .image_area {
+          width: 45%;
+          margin-left: 4%; }
+          body main #contest .contest-wrp .contest-li .image_area img {
+            width: 120%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
+        body main #contest .contest-wrp .contest-li .text_area {
+          width: 55%;
+          background: #fddb88;
+          width: 160px;
+          height: 160px;
+          border-radius: 50%;
+          position: relative;
+          text-align: center;
+          margin: 3%; }
+          body main #contest .contest-wrp .contest-li .text_area .text_area_wrp {
+            position: absolute;
+            top: 25px;
+            left: 20px;
+            line-height: 1.7; }
+            body main #contest .contest-wrp .contest-li .text_area .text_area_wrp img {
+              width: 30px; }
+            body main #contest .contest-wrp .contest-li .text_area .text_area_wrp h3 {
+              font-family: "Noto Serif JP", serif;
+              font-size: 1.6rem; }
+            body main #contest .contest-wrp .contest-li .text_area .text_area_wrp p.txt {
+              font-size: 1.3rem; }
+            body main #contest .contest-wrp .contest-li .text_area .text_area_wrp p.link {
+              font-size: 1.1rem;
+              color: #773300; }
+              body main #contest .contest-wrp .contest-li .text_area .text_area_wrp p.link a {
+                display: block; }
+              body main #contest .contest-wrp .contest-li .text_area .text_area_wrp p.link a:hover {
+                opacity: 0.8; }
+    body main #contest p.oubo-txt {
+      padding: 1.0rem 1.0rem;
+      line-height: 1.6;
+      margin: 2.0rem 1.0rem;
+      background-color: rgba(253, 219, 136, 0.5);
+      border-radius: 5px; }
+  body main #about {
+    padding: 0 1.5rem;
+    margin-bottom: 7.0rem; }
+    body main #about .pc-img {
+      display: none; }
+    body main #about .about_table {
+      width: 100%; }
+      body main #about .about_table tbody tr {
+        border-bottom: 1px solid #444444; }
+      body main #about .about_table tbody th {
+        width: 100px;
+        text-align: left;
+        padding: 1.3rem 1.0rem 1.0rem; }
+      body main #about .about_table tbody td {
+        padding: 1.3rem 0 1.0rem 0;
+        line-height: 1.6rem; }
+  body main #contact {
+    padding: 0 1.5rem;
+    margin-bottom: 5.0rem; }
+    body main #contact p.contact-txt {
+      line-height: 1.6;
+      margin-bottom: 1.0rem; }
+    body main #contact .form-wrp {
+      background-color: rgba(253, 219, 136, 0.5);
+      padding: 1.0rem 2.0rem 2.0rem;
+      border-radius: 10px; }
+      body main #contact .form-wrp #form {
+        margin: 0 auto; }
+        body main #contact .form-wrp #form label, body main #contact .form-wrp #form input, body main #contact .form-wrp #form textarea {
+          display: block; }
+        body main #contact .form-wrp #form input, body main #contact .form-wrp #form textarea {
+          width: 100%;
+          border: none;
+          outline: none;
+          padding: 1.0rem;
+          font-size: 1.5rem;
+          transition: border 0.5s;
+          -webkit-transition: border 0.5s;
+          -moz-transition: border 0.5s;
+          -o-transition: border 0.5s;
+          -webkit-box-sizing: border-box;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+        body main #contact .form-wrp #form input[type="submit"] {
+          border-radius: 15px;
+          box-shadow: 3px 3px 5px grey; }
+        body main #contact .form-wrp #form textarea {
+          height: 100px;
+          resize: none;
+          overflow: auto; }
+        body main #contact .form-wrp #form input[type="submit"] {
+          background-color: #fddb88;
+          color: #ffffff;
+          height: 5.0rem;
+          cursor: pointer;
+          margin-top: 3.0rem;
+          font-size: 1.8rem; }
+        body main #contact .form-wrp #form input[type="submit"]:hover {
+          background-color: #ffbc17; }
+        body main #contact .form-wrp #form label {
+          font-size: 1.5rem;
+          margin: 2.0rem 0 0.5rem 0;
+          font-weight: bold; }
+      body main #contact .form-wrp .contact-txt {
+        margin-top: 2.0rem; }
+        body main #contact .form-wrp .contact-txt ul {
+          padding-bottom: 1.5rem;
+          margin-bottom: 1.5rem;
+          border-bottom: 1px solid #444444;
+          padding-left: 2.0rem; }
+          body main #contact .form-wrp .contact-txt ul li {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 0.7rem; }
+        body main #contact .form-wrp .contact-txt .contact-notes {
+          font-size: 1.1rem;
+          line-height: 1.5; }
+  body main #pan {
+    padding-left: 6%;
+    padding-top: 2%; }
+    body main #pan ul.bread {
+      list-style: none;
+      font-size: 1.0rem; }
+      body main #pan ul.bread li {
+        display: inline-block; }
+    body main #pan ul.bread li:first-of-type::after {
+      content: '>';
+      padding: 0 0.3em; }
+  body main .rank {
+    margin-top: 1.5rem; }
+    body main .rank .menu-wrp img {
+      text-align: center;
+      width: 40px;
+      margin: 0 auto;
+      display: block;
+      margin-top: 3.0rem;
+      margin-bottom: 1.5rem; }
+    body main .rank .menu-wrp h2 {
+      text-align: center;
+      font-size: 2.5rem;
+      font-weight: bold;
+      font-family: #fcecc6; }
+    body main .rank .menu-wrp p.contributor {
+      text-align: center;
+      font-size: 1.8rem;
+      margin: 2.0rem 0; }
+    body main .rank .menu-wrp p.cooktime {
+      text-align: right;
+      font-size: 1.2rem;
+      margin-right: 0.5rem;
+      margin-bottom: 0.7rem; }
+      body main .rank .menu-wrp p.cooktime i {
+        margin-right: 0.5rem; }
+    body main .rank .recipi-wrp img {
+      width: 100%; }
+    body main .rank .recipi-wrp h5 {
+      background-color: #fddb88;
+      color: #4c4a40;
+      border-bottom: 1px solid #E8E4D8;
+      border-top: 1px solid #E8E4D8;
+      display: block;
+      padding: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 1.2;
+      position: relative;
+      letter-spacing: 0.02em;
+      margin: 0; }
+    body main .rank .recipi-wrp .coment p {
+      padding: 0.8rem;
+      font-size: 1.4rem;
+      line-height: 1.6; }
+    body main .rank .recipi-wrp .material dl {
+      padding: 0.6rem 0.8rem;
+      border-bottom: 1px solid #e5e5e5;
+      overflow: hidden; }
+      body main .rank .recipi-wrp .material dl dt {
+        float: left; }
+      body main .rank .recipi-wrp .material dl dd {
+        float: right; }
+    body main .rank .recipi-wrp .cooking ol {
+      padding-left: 1.5rem; }
+      body main .rank .recipi-wrp .cooking ol li {
+        line-height: 1.7;
+        font-size: 1.5rem;
+        margin: 2.0rem 1.0rem; }
+  body #pageup {
+    position: fixed;
+    right: 5%;
+    bottom: 2%;
+    transition: 1s;
+    opacity: 0.6;
+    cursor: pointer; }
+    body #pageup img {
+      width: 45px; }
+  body #pageup:hover {
+    opacity: 1; }
+  body footer {
+    background-color: #fddb88; }
+    body footer .footer-wrapper {
+      display: flex;
+      align-items: center;
+      padding: 2.0rem; }
+      body footer .footer-wrapper .footer-nav {
+        width: 50%;
+        line-height: 2.0rem;
+        font-size: 1.1rem; }
+      body footer .footer-wrapper .footer-logo {
+        width: 50%;
+        text-align: center; }
+        body footer .footer-wrapper .footer-logo img {
+          width: 75%; }
+        body footer .footer-wrapper .footer-logo .copyright {
+          font-size: 0.5rem;
+          text-align: center;
+          color: #773300;
+          margin: 1.0rem 1.0rem 0 1.0rem; }
+
+/*------------------pc768版-----------------------
+---------------------------------------------*/
+@media screen and (min-width: 768px) {
+  body {
+    grid-template: "header" 66px "main  " "......" 10px "footer" 94px; }
+    body header {
+      box-sizing: border-box;
+      margin: 0 auto;
+      padding: 15px 20px 8px;
+      max-width: 1100px; }
+      body header .header-in {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; }
+        body header .header-in .header-logo {
+          width: 40%; }
+          body header .header-in .header-logo img {
+            width: 100%; }
+        body header .header-in .menu-btn {
+          display: none; }
+        body header .header-in .sp-menubtn_toggle {
+          display: block !important;
+          width: 60%;
+          border-top: none;
+          position: static;
+          text-align: end;
+          margin-top: 0; }
+          body header .header-in .sp-menubtn_toggle li {
+            display: inline-block;
+            border-bottom: none; }
+            body header .header-in .sp-menubtn_toggle li a {
+              display: block;
+              font-size: 1.3rem;
+              padding: 0;
+              color: #773300; }
+          body header .header-in .sp-menubtn_toggle a.sla::after {
+            content: "|";
+            margin: 0 0.5rem;
+            color: #773300; }
+    body main {
+      max-width: 1100px;
+      margin: 0 auto; }
+      body main .first-font {
+        font-size: 3.5rem;
+        margin-top: 10.0rem; }
+      body main .first-font::before {
+        content: '';
+        display: block;
+        width: 35px;
+        height: 35px;
+        background-image: url(../images/top/t-mame-pc.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        vertical-align: middle;
+        margin: 0 auto 1.5rem; }
+      body main #screen {
+        height: 500px;
+        background-image: url(../images/top/top_m.png);
+        background-size: cover; }
+        body main #screen .vertical {
+          writing-mode: vertical-rl;
+          font-size: 3.5rem;
+          line-height: 1.7;
+          font-weight: bold;
+          color: #ffffff;
+          padding: 7.5rem 0 0 5.5rem;
+          font-family: "Noto Serif JP", serif;
+          color: #773300; }
+      body main #news .first-font {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 5.0rem;
+        margin-bottom: 3.0rem; }
+      body main #news .news-li {
+        width: 80%;
+        margin: 0 auto; }
+        body main #news .news-li dt {
+          font-size: 1.8rem;
+          line-height: 2;
+          float: left; }
+        body main #news .news-li dd {
+          margin-bottom: 3.0rem;
+          margin-left: 15.0rem; }
+          body main #news .news-li dd h4 {
+            font-size: 1.8rem;
+            line-height: 2; }
+          body main #news .news-li dd p.news-text {
+            font-size: 1.8rem;
+            line-height: 1.8; }
+      body main #commitment img {
+        width: 180px;
+        height: auto; }
+      body main #commitment .commitment-text h2 {
+        font-size: 2.5rem;
+        text-align: inherit; }
+      body main #commitment .commitment-text p.exp {
+        font-size: 1.7rem;
+        line-height: 2.4;
+        width: 65%;
+        float: left;
+        margin-bottom: 0; }
+      body main #commitment .commitment-text img {
+        width: 28%;
+        float: right; }
+      body main #commitment .commitment-li {
+        display: flex;
+        justify-content: space-between;
+        clear: both; }
+        body main #commitment .commitment-li .commitment-li-wrp {
+          width: 30%;
+          margin-top: 5.0rem;
+          display: flex;
+          flex-direction: column; }
+          body main #commitment .commitment-li .commitment-li-wrp .li-txt {
+            width: 100%;
+            height: 100%; }
+            body main #commitment .commitment-li .commitment-li-wrp .li-txt h5 {
+              font-size: 1.7rem;
+              text-align: center;
+              margin-bottom: 3.0rem; }
+            body main #commitment .commitment-li .commitment-li-wrp .li-txt ul {
+              font-size: 1.5rem;
+              line-height: 2; }
+          body main #commitment .commitment-li .commitment-li-wrp .li-img {
+            width: 100%;
+            margin-top: 3.0rem; }
+            body main #commitment .commitment-li .commitment-li-wrp .li-img img {
+              margin: 0 auto; }
+      body main #commitment .apr {
+        display: flex;
+        align-items: center;
+        margin-top: 3.0rem; }
+        body main #commitment .apr .apr-left {
+          width: 50%; }
+        body main #commitment .apr .sq::after {
+          content: "▶";
+          color: #ffbc17;
+          margin-left: 1.0rem; }
+        body main #commitment .apr .apr-right {
+          width: 50%; }
+          body main #commitment .apr .apr-right a img {
+            width: 65%; }
+      body main #product .product-li {
+        padding: 0 3%; }
+        body main #product .product-li .product-items li {
+          width: 25%; }
+          body main #product .product-li .product-items li img {
+            width: 80%; }
+          body main #product .product-li .product-items li h3 {
+            font-size: 2.0rem;
+            text-align: inherit;
+            margin-left: 2.0rem; }
+            body main #product .product-li .product-items li h3 span {
+              font-size: 2.0rem;
+              margin-right: 1.0rem; }
+          body main #product .product-li .product-items li p {
+            margin: 0;
+            padding: 1.0rem 1.0rem 0 2.0rem;
+            font-size: 1.5rem;
+            line-height: 1.6; }
+      body main #contest p.contest-txt {
+        font-size: 1.7rem; }
+        body main #contest p.contest-txt .spbr {
+          display: none; }
+        body main #contest p.contest-txt span {
+          font-size: 2.0rem; }
+      body main #contest .contest-wrp {
+        display: flex;
+        padding-left: 3%;
+        padding-bottom: 0; }
+        body main #contest .contest-wrp .contest-li {
+          width: 33%; }
+          body main #contest .contest-wrp .contest-li .text_area {
+            width: 140px;
+            height: 130px; }
+            body main #contest .contest-wrp .contest-li .text_area .text_area_wrp {
+              top: 12px;
+              left: 7px; }
+              body main #contest .contest-wrp .contest-li .text_area .text_area_wrp h3 {
+                font-size: 1.4rem; }
+              body main #contest .contest-wrp .contest-li .text_area .text_area_wrp p.txt {
+                font-size: 1.2rem; }
+      body main #contest p.oubo-txt {
+        font-size: 1.6rem;
+        margin: 2.0rem; }
+      body main #about .pc-wrp {
+        display: flex;
+        justify-content: space-around;
+        align-items: center; }
+        body main #about .pc-wrp .pc-img {
+          display: block;
+          width: 23%;
+          height: auto; }
+        body main #about .pc-wrp .about_table {
+          font-size: 1.6rem;
+          width: 50%;
+          margin: 0 auto; }
+          body main #about .pc-wrp .about_table tbody th {
+            padding: 1.3rem 5.0rem 1.0rem; }
+      body main #contact {
+        padding: 0 15%; }
+        body main #contact p.contact-txt {
+          font-size: 1.6rem;
+          padding: 2.0rem 4.0rem 1.0rem;
+          line-height: 1.7; }
+        body main #contact .form-wrp {
+          padding: 3.0rem 7.0rem; }
+          body main #contact .form-wrp #form label {
+            margin: 2.0rem 0 1.5rem 0; }
+          body main #contact .form-wrp #form input[type="submit"] {
+            width: 50%;
+            border-radius: 15px;
+            box-shadow: 3px 3px 5px grey;
+            margin: 3.0rem auto; }
+          body main #contact .form-wrp .contact-txt ul li {
+            font-size: 1.4rem; }
+          body main #contact .form-wrp .contact-txt .contact-notes {
+            font-size: 1.2rem; }
+      body main #pan ul.bread {
+        font-size: 1.4rem; }
+      body main .rank {
+        margin-top: 3.0rem; }
+        body main .rank .menu-wrp {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-around;
+          flex-wrap: wrap;
+          width: 80%;
+          margin: 0 auto 3.0rem; }
+          body main .rank .menu-wrp img {
+            width: 60px;
+            margin: 0; }
+          body main .rank .menu-wrp h2 {
+            font-size: 3.5rem;
+            margin: 0; }
+          body main .rank .menu-wrp p.contributor {
+            margin: 0;
+            font-size: 3.0rem; }
+          body main .rank .menu-wrp p.cooktime {
+            font-size: 1.5rem;
+            margin: 0;
+            margin-top: 2.0rem; }
+        body main .rank .recipi-wrp {
+          width: 80%;
+          margin: 0 auto; }
+          body main .rank .recipi-wrp img {
+            display: block;
+            margin: 0 auto; }
+          body main .rank .recipi-wrp .coment,
+          body main .rank .recipi-wrp .material,
+          body main .rank .recipi-wrp .cooking {
+            margin-top: 3.0rem; }
+    body #pageup {
+      right: 3%;
+      bottom: 5%; }
+      body #pageup img {
+        width: 55px; }
+    body footer {
+      background-color: #fddb88; }
+      body footer .footer-wrapper {
+        box-sizing: border-box;
+        margin: 0 auto;
+        max-width: 1100px;
+        padding: 2.0rem 5.0rem;
+        align-items: center; }
+        body footer .footer-wrapper .footer-nav {
+          width: 70%; }
+          body footer .footer-wrapper .footer-nav p {
+            float: left;
+            font-size: 1.5rem; }
+            body footer .footer-wrapper .footer-nav p a {
+              display: block; }
+            body footer .footer-wrapper .footer-nav p a.footer-sla::after {
+              content: "|";
+              margin: 0 0.5rem; }
+        body footer .footer-wrapper .footer-logo {
+          text-align: right;
+          width: 30%; }
+          body footer .footer-wrapper .footer-logo img {
+            width: 150px;
+            display: block;
+            margin: 0 auto; }
+          body footer .footer-wrapper .footer-logo p.copyright {
+            font-size: 1.1rem;
+            letter-spacing: 0.1rem;
+            text-align: center;
+            color: #773300;
+            padding-left: 3.0rem; } }
+/*------------------pc1024版-----------------------
+---------------------------------------------*/
+@media screen and (min-width: 1024px) {
+  body {
+    grid-template: "header" 100px "main  " "......" 10px "footer" 118px; }
+    body header {
+      padding-top: 2.5rem; }
+      body header .header-in .sp-menubtn_toggle {
+        margin-top: 1.0rem; }
+        body header .header-in .sp-menubtn_toggle li a {
+          font-size: 1.5rem; }
+        body header .header-in .sp-menubtn_toggle li a.sla::after {
+          margin: 0 1rem; }
+    body main #news {
+      background-image: url(../images/top/mame-bg.png);
+      background-repeat: no-repeat;
+      background-size: 30%;
+      background-position: left bottom; }
+    body main #product .product-li {
+      padding: 0 0 0 3%; }
+      body main #product .product-li .product-items li p {
+        padding: 1.0rem 3.0rem 0 2.0rem; }
+    body main #contest .contest-wrp .contest-li .text_area {
+      width: 160px;
+      height: 160px; }
+      body main #contest .contest-wrp .contest-li .text_area .text_area_wrp {
+        top: 25px;
+        left: 20px; }
+        body main #contest .contest-wrp .contest-li .text_area .text_area_wrp h3 {
+          font-size: 1.6rem; }
+        body main #contest .contest-wrp .contest-li .text_area .text_area_wrp p.txt {
+          font-size: 1.3rem; }
+    body footer .footer-wrapper {
+      padding: 2.5rem 5.0rem; }
+      body footer .footer-wrapper .footer-logo img {
+        width: 200px; }
+      body footer .footer-wrapper .footer-logo p.copyright {
+        font-size: 1.4rem; } }
+
+/*# sourceMappingURL=style.css.map */
