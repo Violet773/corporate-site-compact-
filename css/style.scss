@@ -580,7 +580,8 @@ body {
                     
                     input[type="submit"]{
                         background-color: $subColor;
-                        color: $baseColor;
+                        color: $fontColor;
+                        font-weight: bold;
                         height: 5.0rem;
                         cursor: pointer;
                         margin-top: 3.0rem;

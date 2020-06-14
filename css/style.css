@@ -342,7 +342,8 @@ body {
           overflow: auto; }
         body main #contact .form-wrp #form input[type="submit"] {
           background-color: #fddb88;
-          color: #ffffff;
+          color: #444444;
+          font-weight: bold;
           height: 5.0rem;
           cursor: pointer;
           margin-top: 3.0rem;
